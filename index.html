@@ -1,40 +1,43 @@
 <!DOCTYPE html>
+<html lang="ht">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fondasyon AHCM / AAKLAM</title>
+<title>Fondasyon AHCM / AAKLAM - ONG Imanitè</title>
 
 <style>
 body{
 margin:0;
 font-family:Arial, sans-serif;
+background:#f5f7fb;
 color:#1a1a1a;
-background:#f6f9fc;
+scroll-behavior:smooth;
 }
 
-/* NAV */
-nav{
+/* HEADER */
+header{
+background:#003049;
+color:white;
+padding:15px;
 position:sticky;
 top:0;
-background:#003049;
-padding:15px;
-text-align:center;
 z-index:1000;
+text-align:center;
 }
 
-nav a{
+header a{
 color:white;
 margin:0 15px;
 text-decoration:none;
 font-weight:bold;
 }
 
-nav a:hover{color:#fcbf49;}
+header a:hover{color:#fcbf49;}
 
 /* HERO */
 .hero{
 background:
-linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url('ahcm%202q.png');
 background-size:cover;
 background-position:center;
@@ -46,6 +49,7 @@ align-items:center;
 text-align:center;
 color:white;
 padding:20px;
+animation:fadeIn 2s;
 }
 
 .hero h1{
@@ -56,17 +60,22 @@ max-width:900px;
 .hero p{
 max-width:700px;
 font-size:1.2rem;
-margin-top:15px;
 }
 
 .btn{
 margin-top:20px;
+padding:15px 30px;
 background:#fcbf49;
 color:black;
-padding:15px 30px;
 text-decoration:none;
 font-weight:bold;
 border-radius:8px;
+margin:5px;
+}
+
+.btn2{
+background:white;
+color:#003049;
 }
 
 /* SECTIONS */
@@ -82,7 +91,7 @@ color:#003049;
 margin-bottom:30px;
 }
 
-/* CARDS */
+/* GRID */
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -93,7 +102,12 @@ gap:20px;
 background:white;
 padding:25px;
 border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,0.08);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
 }
 
 /* GALLERY */
@@ -107,8 +121,8 @@ gap:15px;
 width:100%;
 height:250px;
 object-fit:cover;
-border-radius:10px;
-transition:0.3s;
+border-radius:12px;
+transition:0.4s;
 }
 
 .gallery img:hover{
@@ -119,8 +133,8 @@ transform:scale(1.05);
 .stats{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
 text-align:center;
+gap:20px;
 }
 
 .stat{
@@ -129,6 +143,7 @@ padding:30px;
 border-radius:12px;
 font-size:1.5rem;
 font-weight:bold;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
 
 /* DON */
@@ -148,51 +163,67 @@ padding:30px;
 margin-top:50px;
 }
 
-.small{
-font-size:0.9rem;
-opacity:0.8;
+/* WHATSAPP FLOAT */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
+<header>
 <a href="#about">Kiyès Nou Ye</a>
 <a href="#mission">Misyon</a>
 <a href="#gallery">Galeri</a>
 <a href="#stats">Enpak</a>
 <a href="#don">Don</a>
 <a href="#contact">Kontak</a>
-</nav>
+</header>
 
-<!-- AYITI -->
-<section class=EDE TIMOUN YO>
+<!-- HERO -->
+<section class="hero">
 <h1>Chak Timoun Merite Yon Avni Pi Bèl</h1>
 <p>
-Fondasyon AHCM / AAKLAM ap travay pou bay timoun nan vilnerabilite
-edikasyon, pwoteksyon ak espwa pou yon lavi miyò.
+Fondasyon AHCM / AAKLAM ap travay pou chanje lavi timoun ki nan vilnerabilite
+atravè edikasyon, pwoteksyon ak sipò sosyal.
 </p>
 
-<a href="#don" class="btn">Sipòte Nou</a>
+<div>
+<a href="#don" class="btn">💙 Fè Yon Don</a>
+<a href="#about" class="btn btn2">Aprann Plis</a>
+</div>
 </section>
 
 <!-- ABOUT -->
 <section id="about">
 <h2>Kiyès Nou Ye</h2>
 <p style="text-align:center;max-width:800px;margin:auto;">
-Nou se yon òganizasyon imanitè ki konsantre sou amelyorasyon lavi timoun
-ak fanmi ki nan bezwen atravè edikasyon, asistans sosyal ak devlopman kominotè.
+Nou se yon ONG imanitè ki konsantre sou ede timoun ak fanmi ki nan bezwen
+atravè edikasyon, sipò sosyal ak devlopman kominotè.
 </p>
 </section>
 
 <!-- MISSION -->
 <section id="mission">
 <h2>Misyon Nou</h2>
-
 <div class="grid">
-<div class="card">🎓 Edikasyon pou Timoun</div>
+<div class="card">🎓 Edikasyon</div>
 <div class="card">🧒 Pwoteksyon Timoun</div>
 <div class="card">🍲 Asistans Imanitè</div>
 <div class="card">🌱 Devlopman Kominotè</div>
@@ -201,7 +232,7 @@ ak fanmi ki nan bezwen atravè edikasyon, asistans sosyal ak devlopman kominotè
 
 <!-- GALLERY -->
 <section id="gallery">
-<h2>Galeri Enpak Nou</h2>
+<h2>Galeri Enpak</h2>
 
 <div class="gallery">
 <img src="ahcm%202q.png">
@@ -210,15 +241,11 @@ ak fanmi ki nan bezwen atravè edikasyon, asistans sosyal ak devlopman kominotè
 <img src="photo3.jpg">
 </div>
 
-<p class="small" style="text-align:center;margin-top:10px;">
-👉 Ranplase foto sa yo ak foto reyèl fondasyon an.
-</p>
 </section>
 
 <!-- STATS -->
 <section id="stats">
 <h2>Enpak Nou</h2>
-
 <div class="stats">
 <div class="stat">100+ Timoun</div>
 <div class="stat">25+ Fanmi</div>
@@ -234,10 +261,8 @@ ak fanmi ki nan bezwen atravè edikasyon, asistans sosyal ak devlopman kominotè
 <div class="donate">
 <p><strong>MonCash:</strong> +509 3750 2678</p>
 <p><strong>NatCash:</strong> +509 4155 2692</p>
-
 <br>
-
-<a href="#" class="btn">💙 PayPal Donate (ajoute lyen ou)</a>
+<a href="#" class="btn">💙 PayPal Donate</a>
 </div>
 </section>
 
@@ -253,9 +278,13 @@ ak fanmi ki nan bezwen atravè edikasyon, asistans sosyal ak devlopman kominotè
 
 <!-- FOOTER -->
 <footer>
-<h3>Fondasyon AHCM / AAKLAM</h3>
-<p>Ankadreman • Edikasyon • Pwoteksyon • Espwa</p>
-<p class="small">© 2026 Tout dwa rezève</p>
+Fondasyon AHCM / AAKLAM © 2026 • Ankadreman • Edikasyon • Espwa
 </footer>
 
+<!-- WHATSAPP BUTTON -->
+<a class="whatsapp" href="https://wa.me/50937502678" target="_blank">
+📱 Chat
+</a>
+
 </body>
+</html>
