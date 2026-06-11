@@ -3,231 +3,247 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fondasyon AAKLAM - ONG Global</title>
+<title>AHCM / AAKLAM - ONG Imanitè</title>
 
 <style>
-body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#f5f8ff;
-  color:#222;
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f5f7ff;
+color:#1b1b1b;
 }
 
 /* HEADER */
-header {
-  background: linear-gradient(90deg,#061a44,#1e88e5);
-  color:white;
-  text-align:center;
-  padding:60px 20px;
-  animation: fadeIn 2s ease-in-out;
+header{
+background:linear-gradient(120deg,#041a44,#1e88e5);
+color:white;
+text-align:center;
+padding:50px 20px;
+position:relative;
 }
 
-header h1 {
-  font-size:38px;
-  margin:0;
-  letter-spacing:2px;
-}
-
-header p {
-  font-size:18px;
+/* LOGO */
+.logo{
+width:90px;
+height:90px;
+margin:auto;
+display:block;
 }
 
 /* NAV */
-nav {
-  background:#0b2c6f;
-  padding:12px;
-  text-align:center;
-  position:sticky;
-  top:0;
+nav{
+background:#0b2c6f;
+padding:12px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:999;
 }
 
-nav a {
-  color:white;
-  margin:10px;
-  text-decoration:none;
-  font-weight:bold;
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:bold;
 }
 
-nav a:hover {
-  color:#00c2ff;
+nav a:hover{
+color:#00e0ff;
 }
 
 /* HERO */
-.hero {
-  text-align:center;
-  padding:80px 20px;
-  background:white;
+.hero{
+text-align:center;
+padding:90px 20px;
+background:linear-gradient(to bottom,#ffffff,#eef3ff);
 }
 
-.hero h2 {
-  font-size:30px;
-  color:#0b2c6f;
+.hero h2{
+font-size:34px;
+color:#0b2c6f;
 }
 
-.hero button {
-  margin-top:20px;
-  padding:12px 25px;
-  border:none;
-  background:#1e88e5;
-  color:white;
-  border-radius:5px;
-  cursor:pointer;
-  transition:0.3s;
+.hero p{
+max-width:600px;
+margin:auto;
 }
 
-.hero button:hover {
-  background:#0b2c6f;
-  transform:scale(1.05);
+.hero button{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:#1e88e5;
+color:white;
+border-radius:8px;
+cursor:pointer;
 }
 
-/* SECTIONS */
-.section {
-  max-width:1100px;
-  margin:auto;
-  padding:50px 20px;
+.hero button:hover{
+background:#0b2c6f;
 }
 
-.card {
-  background:white;
-  padding:20px;
-  border-radius:10px;
-  box-shadow:0 0 15px rgba(0,0,0,0.1);
-  margin:10px;
-  flex:1;
-  min-width:250px;
-  transition:0.3s;
+/* SECTION */
+.section{
+max-width:1100px;
+margin:auto;
+padding:50px 20px;
 }
 
-.card:hover {
-  transform:translateY(-5px);
+.section h2{
+text-align:center;
+color:#0b2c6f;
+margin-bottom:20px;
+}
+
+/* CARD */
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+margin:10px;
+flex:1;
+min-width:250px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 /* GRID */
-.grid {
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
+.grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 /* DONATION */
-.donate-box {
-  background: linear-gradient(135deg,#1e88e5,#0b2c6f);
-  color:white;
-  padding:30px;
-  border-radius:10px;
-  text-align:center;
-}
-
-/* LANGUAGE SWITCH */
-.lang {
-  position:absolute;
-  top:10px;
-  right:10px;
-}
-
-.lang button {
-  margin:3px;
-  padding:5px 10px;
-  border:none;
-  cursor:pointer;
+.donate{
+background:linear-gradient(135deg,#1e88e5,#0b2c6f);
+color:white;
+padding:30px;
+border-radius:12px;
+text-align:center;
 }
 
 /* FOOTER */
-footer {
-  background:#061a44;
-  color:white;
-  text-align:center;
-  padding:20px;
+footer{
+background:#041a44;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
 }
 
-/* ANIMATION */
-@keyframes fadeIn {
-  from {opacity:0;}
-  to {opacity:1;}
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.hero h2{font-size:26px;}
 }
 </style>
 </head>
 
 <body>
 
-<div class="lang">
-  <button onclick="setLang('ht')">Kreyòl</button>
-  <button onclick="setLang('en')">English</button>
-</div>
-
 <header>
-  <h1>FONDASYON AAKLAM</h1>
-  <p id="tagline">ONG Global pou Devlopman Imanitè</p>
+
+<!-- LOGO PROFESYONÈL SVG -->
+<svg class="logo" viewBox="0 0 100 100">
+<defs>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#ffffff"/>
+<stop offset="100%" stop-color="#1e88e5"/>
+</linearGradient>
+</defs>
+
+<circle cx="50" cy="50" r="45" fill="url(#g)"/>
+<text x="50" y="55" text-anchor="middle" font-size="20" font-weight="bold" fill="#0b2c6f">AAK</text>
+</svg>
+
+<h1>Fondasyon Aksyon Ayisyen Kont la Mize</h1>
+<p>AHCM / AAKLAM - ONG Imanitè Global</p>
 </header>
 
 <nav>
-  <a href="#home">Home</a>
-  <a href="#about">Sou Nou</a>
-  <a href="#projects">Pwojè</a>
-  <a href="#donate">Donn</a>
-  <a href="#contact">Kontak</a>
+<a href="#home">Home</a>
+<a href="#about">Sou Nou</a>
+<a href="#projects">Pwojè</a>
+<a href="#donate">Don</a>
+<a href="#contact">Kontak</a>
 </nav>
 
 <section class="hero" id="home">
-  <h2 id="heroText">Bati yon pi bon avni pou mond lan</h2>
-  <button id="ctaBtn">Aprann Plis</button>
+<h2>Bati yon pi bon avni pou Ayiti</h2>
+<p>Nou travay nan edikasyon, sante, dlo pwòp ak devlopman kominote pou ede moun ki nan bezwen.</p>
+<button>Aprann Plis</button>
 </section>
 
 <section class="section" id="about">
-  <h2>Sou Nou</h2>
-  <div class="card" id="aboutText">
-    Nou se yon ONG ki travay nan edikasyon, sante ak devlopman kominote.
-  </div>
+<h2>Sou Nou</h2>
+<div class="card">
+AHCM / AAKLAM se yon ONG ki dedye nan ede kominote ayisyen yo atravè edikasyon, sante, ak devlopman sosyal.
+</div>
 </section>
 
 <section class="section" id="projects">
-  <h2>Pwojè Nou Yo</h2>
-  <div class="grid">
-    <div class="card">📚 Edikasyon</div>
-    <div class="card">🏥 Sante</div>
-    <div class="card">💧 Dlo Pwòp</div>
-    <div class="card">🌱 Agrikilti</div>
-  </div>
+<h2>Pwojè Nou Yo</h2>
+<div class="grid">
+<div class="card">📚 Edikasyon</div>
+<div class="card">🏥 Sante</div>
+<div class="card">💧 Dlo Pwòp</div>
+<div class="card">🌱 Agrikilti</div>
+</div>
 </section>
 
 <section class="section" id="donate">
-  <h2>Donn & Sipò</h2>
-  <div class="donate-box">
-    <p id="donText">Sipò ou chanje lavi moun</p>
-    <p><b>MonCash:</b> 509 3750 2678</p>
-    <p><b>NatCash:</b> 509 4155 9406</p>
-    <button>Donn Kounye a</button>
-  </div>
+<h2>Don & Sipò</h2>
+<div class="donate">
+<p><b>MonCash:</b> 509 3750 2678</p>
+<p><b>NatCash:</b> 509 4155 9406</p>
+<p>Sipò ou ka chanje lavi anpil moun ❤️</p>
+</div>
 </section>
 
 <section class="section" id="contact">
-  <h2>Kontak</h2>
-  <div class="card">
-    <p>Email: contact@aaklam.org</p>
-    <p>Tel: +509 4155 9406</p>
-  </div>
+<h2>Kontak</h2>
+<div class="grid">
+<div class="card">
+📧 fondationaaklam@gmail.com
+</div>
+📧 rtlkradyotelelangajkreyol@gmail.com
+</div>
+<div class="card">
+📧 rtlkradyotelelangajkreyol@gmail.com
+</div>
+
+<div class="card">
+📞 +509 4155 9406
+</div>
+
+<div class="card">
+📞 +509 3750 2678
+</div>
+</div>
 </section>
 
 <footer>
-  © 2026 Fondasyon AAKLAM - ONG Global
+© 2026 AHCM / AAKLAM - Tout dwa rezève
 </footer>
 
-<script>
-function setLang(lang){
-  if(lang === 'en'){
-    document.getElementById("tagline").innerText = "Global Humanitarian NGO";
-    document.getElementById("heroText").innerText = "Building a better future for the world";
-    document.getElementById("aboutText").innerText = "We are an NGO working in education, health and community development.";
-    document.getElementById("donText").innerText = "Your support changes lives";
-  }
-  if(lang === 'ht'){
-    document.getElementById("tagline").innerText = "ONG Global pou Devlopman Imanitè";
-    document.getElementById("heroText").innerText = "Bati yon pi bon avni pou yo kap viv nan mond lan";
-    document.getElementById("aboutText").innerText = "Nou se yon ONG ki travay nan edikasyon, sante ak devlopman kominote.";
-    document.getElementById("donText").innerText = "Sipò ou ka ede chanje lavi plizye timoun";
-  }
-}
-</script>
+<a class="whatsapp" href="https://wa.me/50941559406">💬</a>
 
 </body>
 </html>
