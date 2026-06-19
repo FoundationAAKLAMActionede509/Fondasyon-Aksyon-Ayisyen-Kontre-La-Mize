@@ -3,75 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kontakte Nou - Fondasyon AAKLAM / AHCM</title>
+<title>Fondasyon AAKLAM / AHCM</title>
 
 <style>
 body{
-    font-family:Arial,sans-serif;
-    margin:0;
-    padding:40px;
-    background:#f4f4f4;
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f7fb;
+color:#333;
 }
 
-.container{
-    max-width:900px;
-    margin:auto;
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
+/* BANNIÈR */
+.hero{
+background-image: url("https://images.pexels.com/photos/5212700/pexels-photo-5212700.jpeg");
+background-size: cover;
+background-position: center;
+height: 500px;
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
 }
 
-h1{
-    color:#0056b3;
+nav{
+background:#082f6b;
+text-align:center;
+padding:10px;
 }
 
-.info{
-    margin:15px 0;
-    font-size:18px;
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+font-weight:bold;
+display:inline-block;
 }
 
-a{
-    color:#0056b3;
-    text-decoration:none;
+section{
+padding:25px;
+max-width:900px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-top:15px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.btn{
+display:inline-block;
+margin-top:10px;
+padding:10px 15px;
+background:#1e88e5;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+footer{
+background:#0b3d91;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
 }
 </style>
+
 </head>
 
 <body>
 
-<div class="container">
+<!-- BANNIÈR -->
+<header class="hero">
+<h1>Fondasyon AAKLAM / AHCM</h1>
+<p>Nou ap travay pou ede kominote an Ayiti</p>
+<a class="btn" href="#about">KONNEN PLIS</a>
+</header>
 
-<h1>Kontakte Nou</h1>
+<nav>
+<a href="#about">Sou Nou</a>
+<a href="#mission">Misyon</a>
+<a href="#projects">Pwojè</a>
+<a href="#contact">Kontak</a>
+</nav>
 
-<p>
-Fondasyon AAKLAM / AHCM toujou pare pou kolabore ak patnè,
-donatè ak volontè ki vle ede nou konbat lamizè.
-</p>
-
-<div class="info">
-📞 Telefòn : +509 3750-2678
+<section id="about">
+<div class="card">
+<h2>Sou Nou</h2>
+<p>Nou se yon ONG ki angaje nan Edikasyon, Asistans Sosyal ak Devlopman Kominote.</p>
 </div>
+</section>
 
-<div class="info">
-📧 Imèl : contact@aaklam.org
+<section id="mission">
+<div class="card">
+<h2>Misyon</h2>
+<p>Nou ede jèn defavorize yo ak fanmi yo pou devlopman Ayiti.</p>
 </div>
-<div class="info">
-📧 Imèl : rtlkradyotelelangajkreyol@gmail.com
-</div>
-<div class="info">
-🌐 Sit entènèt : AAKLAM / AHCM
-</div>
+</section>
 
-<div class="info">
-📍 Ayiti
+<section id="projects">
+<div class="card">
+<h2>Pwojè</h2>
+<ul>
+<li>Edikasyon pou timoun</li>
+<li>Asistans sosyal</li>
+<li>Netwayaj kominote</li>
+</ul>
 </div>
+</section>
 
-<br>
+<section id="contact">
+<div class="card">
+<h2>Kontak</h2>
 
-<a href="index.html">⬅ Retounen sou Akèy la</a>
+<p>Telefòn: +509 3750 2678</p>
+
+<p>Email: contact@aaklam.org</p>
+<p>Email: fondationaaklam@gmail.com</p>
+<p>Email: rtlkradyotelelangajkreyol@gmail.com</p>
+
+<a class="btn" href="https://wa.me/50937502678" target="_blank">
+WhatsApp
+</a>
 
 </div>
+</section>
+
+<footer>
+<p>© 2026 Fondasyon AAKLAM / AHCM</p>
+</footer>
 
 </body>
 </html>
