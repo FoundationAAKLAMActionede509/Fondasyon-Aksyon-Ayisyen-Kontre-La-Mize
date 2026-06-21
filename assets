@@ -1,1 +1,16 @@
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+}
 
+.hero h1,
+.hero p,
+.hero a{
+position:relative;
+z-index:2;
+}
