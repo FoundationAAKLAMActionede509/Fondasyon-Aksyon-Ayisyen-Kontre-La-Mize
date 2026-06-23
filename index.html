@@ -1,7 +1,7 @@
+```html
 <!DOCTYPE html>
 <html lang="ht">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,306 +9,228 @@
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Arial,sans-serif;
-background:#f4f7fb;
-color:#333;
+padding:0;
+box-sizing:border-box;
 }
 
+body{
+font-family:Arial, sans-serif;
+background:#f4f7fb;
+color:#333;
+line-height:1.6;
+}
 
 /* MENU */
 
 nav{
 background:#082f6b;
+padding:15px;
 text-align:center;
-padding:18px;
 position:sticky;
 top:0;
-z-index:10;
+z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,.2);
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:10px;
+margin:0 12px;
 font-weight:bold;
+transition:.3s;
 }
 
+nav a:hover{
+color:#ffd54f;
+}
 
-/* BANNIER */
+/* HERO */
 
 .hero{
-
-background-image:url("https://i.postimg.cc/PJvH9TNs/Banner.png");
-
-background-size:cover;
-background-position:center;
-
-height:420px;
-
+background:url("https://i.postimg.cc/PJvH9TNs/Banner.png") center/cover no-repeat;
+height:500px;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-
 text-align:center;
-color:white;
-
 position:relative;
+color:white;
 }
-
 
 .hero::before{
-
 content:"";
-
 position:absolute;
-
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-background:rgba(0,0,0,0.55);
+inset:0;
+background:rgba(0,0,0,.55);
 }
 
-
-.hero h1,
-.hero p,
-.hero a{
-
+.hero-content{
 position:relative;
 z-index:2;
-
-text-shadow:0 3px 8px black;
-
+max-width:800px;
+padding:20px;
 }
-
 
 .hero h1{
-
-font-size:45px;
+font-size:3rem;
+margin-bottom:10px;
+text-shadow:0 4px 10px rgba(0,0,0,.8);
 }
 
+.hero p{
+font-size:1.2rem;
+margin-bottom:20px;
+text-shadow:0 2px 6px rgba(0,0,0,.8);
+}
+
+/* BOUTON */
 
 .btn{
-
 display:inline-block;
-
-margin-top:15px;
-
-padding:12px 22px;
-
+padding:14px 28px;
 background:#1e88e5;
-
 color:white;
-
 text-decoration:none;
-
-border-radius:10px;
-
-box-shadow:0 4px 10px rgba(0,0,0,.3);
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
 }
 
+.btn:hover{
+transform:translateY(-2px);
+background:#1565c0;
+}
 
-/* SEKSYON */
+/* CONTENT */
 
-section{
-padding:15px;
-max-width:900px;
+.container{
+max-width:1100px;
 margin:auto;
+padding:40px 20px;
 }
 
-
-.hero{
-height:420px;
-
+.card{
+background:white;
+padding:25px;
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
 
 .card h2{
-
 color:#082f6b;
+margin-bottom:10px;
 }
 
+.card ul{
+padding-left:20px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin-bottom:8px;
+}
 
 /* FOOTER */
 
 footer{
-
-background:#0b3d91;
-
+background:#082f6b;
 color:white;
-
 text-align:center;
-
-padding:20px;
-
+padding:25px;
 margin-top:30px;
 }
 
+/* MOBILE */
 
-/* TELEFON */
-
-@media(max-width:600px){
-
-nav a{
-
-display:block;
-
-margin:8px;
-}
-
+@media(max-width:768px){
 
 .hero{
-
-height:450px;
+height:420px;
 }
-
 
 .hero h1{
-
-font-size:30px;
+font-size:2rem;
 }
 
+nav a{
+display:block;
+margin:8px 0;
+}
+
+}
 
 </style>
-
 </head>
-
-
 <body>
 
-
 <nav>
-
 <a href="index.html">Akèy</a>
-
 <a href="about.html">Sou Nou</a>
-
 <a href="projects.html">Pwojè</a>
-
 <a href="gallery.html">Galeri</a>
-
 <a href="donation.html">Fè Yon Don</a>
-
 <a href="contact.html">Kontak</a>
-
 </nav>
 
-
-
 <section class="hero">
-
+<div class="hero-content">
 <h1>AAKLAM / AHCM</h1>
-
-<p>
-Fondasyon Aksyon Ayisyen Kontre La Mize
-</p>
-
-
-<a href="donation.html" class="btn">
-
-❤️ FÈ YON DON KOUNYE A
-
-</a>
-
-
+<p>Fondasyon Aksyon Ayisyen Kontre La Mize</p>
+<a href="donation.html" class="btn">❤️ FÈ YON DON KOUNYE A</a>
+</div>
 </section>
 
-
-
-<section>
-
+<div class="container">
 
 <div class="card">
-
 <h2>Sou Nou</h2>
-
 <p>
-Nou se yon ONG ki angaje nan edikasyon,
-asistans sosyal ak devlopman kominote.
-Nou travay pou pote espwa ak sipò bay moun ki nan bezwen.
+Nou se yon ONG ki angaje nan edikasyon, asistans sosyal,
+devlopman kominotè ak pwoteksyon timoun atravè Ayiti.
 </p>
-
-<div>
-
-
+</div>
 
 <div class="card">
-
-<h2>Misyon</h2>
-
+<h2>Misyon Nou</h2>
 <p>
-
-Nou vle pote sipò bay timoun ak fanmi ki nan sitiyasyon vilnerab
-pou ede yo bati yon pi bon avni.
-
+Pote espwa, sipò ak opòtinite pou fanmi ak timoun ki nan sitiyasyon
+vilnerab pou ede yo bati yon pi bon avni.
 </p>
-
-<div>
-
-
+</div>
 
 <div class="card">
-
-<h2>Pwojè</h2>
-
+<h2>Pwojè Nou Yo</h2>
 <ul>
-
 <li>SOS Edikasyon pou timoun yo</li>
-
 <li>Distribisyon manje ak sipò sosyal</li>
-
 <li>Swen ak asistans kominotè</li>
-
-<li>
-SOS kont ensekirite, abi seksyèl ak vyolans sou timoun
-</li>
-
+<li>Pwoteksyon timoun kont abi ak vyolans</li>
 </ul>
+</div>
 
-<div>
-
-
-
-<div class="card">
-
-
+<div class="card contact">
 <h2>Kontak</h2>
-
-
-<p>📞 Telefòn: +509 3750 2678</p>
-
+<p>📞 +509 3750 2678</p>
 <p>📧 fondationaaklam@gmail.com</p>
-
 <p>📧 rtlkradyotelelangajkreyol@gmail.com</p>
-
 <p>📧 giniorfelix@yahoo.com</p>
 
-
-<a class="btn"
-href="https://wa.me/50937502678"
-target="_blank">
-
+<a href="https://wa.me/50937502678" target="_blank" class="btn">
 WhatsApp
-
 </a>
+</div>
 
-
-<div>
-
-
-<section>
-
-
+</div>
 
 <footer>
-
-© 2026 Fondasyon AAKLAM / AHCM
-
-<footer>
-
+© 2026 Fondasyon AAKLAM / AHCM - Tout dwa rezève
+</footer>
 
 </body>
 </html>
+```
