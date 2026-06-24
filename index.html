@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="ht">
 <head>
@@ -6,7 +7,8 @@
 <title>Fondasyon AAKLAM / AHCM</title>
 
 <style>
-{
+
+*{
 margin:0;
 padding:0;
 box-sizing:border-box;
@@ -44,9 +46,8 @@ color:#ffd54f;
 background:url('https://i.postimg.cc/HL9Lgkmb/ddf89f00-d54e-407d-a55a-9115d08dfa43.png');
 background-size:cover;
 background-position:center;
-min-height:350px;
+min-height:450px;
 display:flex;
-flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
@@ -68,16 +69,18 @@ background:rgba(0,0,0,0.45);
 .hero-text{
 position:relative;
 z-index:2;
+max-width:800px;
 }
 
 .hero h1{
-font-size:2.2rem;
+font-size:3rem;
 margin-bottom:10px;
+text-shadow:0 3px 8px rgba(0,0,0,.8);
 }
 
 .hero p{
-font-size:1.1rem;
-max-width:700px;
+font-size:1.2rem;
+margin-bottom:20px;
 }
 
 .btn{
@@ -88,6 +91,10 @@ color:white;
 text-decoration:none;
 border-radius:50px;
 font-weight:bold;
+}
+
+.btn:hover{
+background:#1565c0;
 }
 
 .container{
@@ -113,6 +120,16 @@ margin-bottom:10px;
 padding-left:20px;
 }
 
+.card li{
+margin-bottom:8px;
+}
+
+video{
+width:100%;
+border-radius:10px;
+margin-top:10px;
+}
+
 footer{
 background:#082f6b;
 color:white;
@@ -124,7 +141,7 @@ margin-top:30px;
 @media(max-width:768px){
 
 .hero{
-height:420px;
+min-height:350px;
 }
 
 .hero h1{
@@ -137,6 +154,7 @@ margin:8px 0;
 }
 
 }
+
 </style>
 </head>
 
@@ -154,10 +172,14 @@ margin:8px 0;
 <div class="hero">
 <div class="hero-text">
 <h1>Fondasyon AAKLAM / AHCM</h1>
-<p>Aksyon Ayisyen Kontre La Mize</p>
+<p>Fondasyon Aksyon Ayisyen Kontre La Mize</p>
+
+<a href="donation.html" class="btn">
+❤️ FÈ YON DON KOUNYE A
+</a>
+
 </div>
-  
-</section>
+</div>
 
 <div class="container">
 
@@ -166,6 +188,7 @@ margin:8px 0;
 <p>
 Nou se yon ONG ki angaje nan edikasyon, asistans sosyal,
 devlopman kominotè ak pwoteksyon timoun atravè Ayiti.
+Nou travay pou pote espwa ak sipò bay moun ki pi vilnerab yo.
 </p>
 </div>
 
@@ -191,24 +214,21 @@ vilnerab pou ede yo bati yon pi bon avni.
 <h2>🎥 Videyo Aktivite Nou Yo</h2>
 
 <p>
-Gade kèk videyo sou aktivite fondasyon an, distribisyon èd,
-pwogram edikasyon ak aksyon kominotè nou yo.
+Gade videyo aktivite fondasyon an isit la.
 </p>
 
-<video width="100%" controls>
+<video controls>
 <source src="videos/video1.mp4" type="video/mp4">
 Navigatè ou a pa sipòte videyo.
 </video>
 
 </div>
 
-
 <div class="card">
 <h2>📸 Dokimantasyon Aktivite Nou Yo</h2>
 
 <p>
-Nou gen dokimante tout aktivite nou yo atravè foto, videyo ak rapò
-pou montre transparans ak rezilta aksyon nou yo.
+Nou dokimante aktivite nou yo atravè foto, videyo, rapò ak temwayaj.
 </p>
 
 <ul>
@@ -220,49 +240,45 @@ pou montre transparans ak rezilta aksyon nou yo.
 
 </div>
 
+<div class="card">
+<h2>📄 Dokiman Ofisyèl</h2>
+
+<ul>
+<li>Rapò aktivite anyèl yo</li>
+<li>Plan estratejik fondasyon an</li>
+<li>Pwopozisyon pwojè yo</li>
+<li>Akò patenarya yo</li>
+<li>Dokiman administratif yo</li>
+</ul>
+
+</div>
 
 <div class="card">
 <h2>🏠 Vizit Lokal</h2>
 
 <p>
-Nou fè vizit regilye nan kominote yo pou idantifye bezwen fanmi yo,
-sipòte timoun yo epi ranfòse relasyon ak popilasyon an.
+Nou fè vizit regilye nan kominote yo pou idantifye bezwen fanmi yo
+epi sipòte moun ki nan bezwen yo.
 </p>
 
-<ul>
-<li>Vizit lekòl yo</li>
-<li>Vizit fanmi yo</li>
-<li>Vizit kominotè yo</li>
-<li>Swivi pwojè yo</li>
-</ul>
-  
 </div>
-
 
 <div class="card">
 <h2>🌍 Vizit Entènasyonal</h2>
 
 <p>
-Fondasyon an ouvè pou kolaborasyon ak patnè entènasyonal,
-volontè ak òganizasyon ki vle sipòte devlopman kominote yo.
+Nou ankouraje patenarya ak òganizasyon entènasyonal pou ede
+devlopman kominotè ak pwoteksyon timoun.
 </p>
 
-<ul>
-<li>Resepsyon delegasyon yo</li>
-<li>Patenarya entènasyonal</li>
-<li>Pwogram echanj eksperyans</li>
-<li>Vizit sipèvizyon pwojè yo</li>
-</ul>
-
 </div>
-
 
 <div class="card">
 <h2>📢 Promotion & Animation</h2>
 
 <p>
-Nou òganize aktivite sansibilizasyon, emisyon, konferans,
-fòmasyon ak animasyon pou ankouraje patisipasyon kominotè.
+Nou òganize aktivite sansibilizasyon, konferans, fòmasyon,
+emisyon ak animasyon kominotè.
 </p>
 
 <a href="projects.html" class="btn">
@@ -271,16 +287,20 @@ Dekouvri Plis
 
 </div>
 
-<div class="card contact">
+<div class="card">
 <h2>Kontak</h2>
+
 <p>📞 +509 3750 2678</p>
 <p>📧 fondationaaklam@gmail.com</p>
 <p>📧 rtlkradyotelelangajkreyol@gmail.com</p>
 <p>📧 giniorfelix@yahoo.com</p>
 
+<br>
+
 <a href="https://wa.me/50937502678" target="_blank" class="btn">
 WhatsApp
 </a>
+
 </div>
 
 </div>
@@ -291,3 +311,4 @@ WhatsApp
 
 </body>
 </html>
+```
