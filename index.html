@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fondasyon AAKLAM / AHCM</title>
 
-<style>
+.<style>
+
 {
 margin:0;
 padding:0;
@@ -42,9 +43,10 @@ color:#ffd54f;
 
 .hero{
 background:url('https://i.postimg.cc/HL9Lgkmb/ddf89f00-d54e-407d-a55a-9115d08dfa43.png');
-background-size:cover;
 background-position:center;
-min-height:450px;
+background-size:cover;
+background-repeat:no-repeat;
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -61,24 +63,22 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.45);
+background:rgba(0,0,0,.45);
 }
-
 .hero-text{
 position:relative;
 z-index:2;
 max-width:800px;
 }
-
 .hero h1{
 font-size:3rem;
 margin-bottom:10px;
 text-shadow:0 3px 8px rgba(0,0,0,.8);
 }
-
 .hero p{
 font-size:1.2rem;
 margin-bottom:20px;
+text-shadow:0 2px 6px rgba(0,0,0,.8);
 }
 
 .btn{
@@ -89,10 +89,11 @@ color:white;
 text-decoration:none;
 border-radius:50px;
 font-weight:bold;
+transition:.3s;
 }
-
 .btn:hover{
 background:#1565c0;
+transform:scale(1.05);
 }
 
 .container{
@@ -100,7 +101,6 @@ max-width:1100px;
 margin:auto;
 padding:40px 20px;
 }
-
 .card{
 background:white;
 padding:25px;
@@ -113,14 +113,20 @@ border-left:6px solid #d21034;
 .card h2{
 color:#082f6b;
 margin-bottom:10px;
+text-shadow:1px 1px 3px rgba(0,0,0,.2);
 }
-
 .card ul{
 padding-left:20px;
 }
 
 .card li{
 margin-bottom:8px;
+}
+
+img{
+max-width:100%;
+height:auto;
+border-radius:10px;
 }
 
 video{
@@ -137,21 +143,28 @@ padding:25px;
 margin-top:30px;
 }
 
-@media(max-width:768px):
+@media(max-width:768px){
 
-.hero{
-min-height:350px;
+nav a{
+display:block;
+margin:10px 0;
 }
-
+.hero{
+height:70vh;
+}
 .hero h1{
 font-size:2rem;
 }
 
-nav a{
-display:block;
-margin:8px 0;
+.hero p{
+font-size:1rem;
 }
 
+.container{
+padding:20px 15px;
+}
+.card{
+padding:20px;
 }
 
 </style>
